@@ -65,7 +65,7 @@ void loop() {
       char msg[2];
       msg[0]=inbyte;
       msg[1]='\0';
-      client.publish("lpsieCar", msg);
+      client.publish("lpsieForklift", msg);
     }
   }
   
