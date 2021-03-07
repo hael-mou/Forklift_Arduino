@@ -155,7 +155,7 @@ Pour ce projet, nous utilisons le drive motor l298n pour contrôler les dc gear 
       stepPer.step(SR);
     }
     
-> SR -->     
+> SR --> StepperOneRevolution : Tournez l'arbre d'un tour dans le sens des aiguilles d'une montre et d'un tour dans le sens inverse   
     
  - test de controle :
  >
