@@ -143,6 +143,8 @@ Pour ce projet, nous utilisons le drive motor l298n pour contrôler les dc gear 
         digitalWrite(pin3,Mode3);
         digitalWrite(pin4,Mode4);
     }
+  
+> les pin : 8 - 9 - 10 - 11
 
  - la fonction utilisées pour controle la grue :
  >
@@ -152,9 +154,35 @@ Pour ce projet, nous utilisons le drive motor l298n pour contrôler les dc gear 
       delay(1);
       stepPer.step(SR);
     }
+    
+> SR -->     
+    
+ - test de controle :
+ >
 
-
-
+    if (Serial.available() > 0) {
+        char incomingByte = Serial.read();
+        switch(incomingByte){
+           case 'a' :forkliftMotor(1,0,1,0); //forward        
+               break;
+           case 'b' :forkliftMotor(0,1,0,1); //back        
+               break;
+           case 'c' :forkliftMotor(0,0,1,0); //RIGHT      
+               break;
+           case 'd' :forkliftMotor(1,0,0,0); //LEFT       
+               break;
+           case 'e' :forkliftMotor(1,0,0,0); //STOP car        
+               break;
+           case 'f' :fokliftHand(Mystepper,SR); //Top        
+               break;
+           case 'g' :fokliftHand(Mystepper,-SR); //bottom        
+               break;
+           case 'k' :fokliftHand(Mystepper,0); //STOP        
+               break;
+          }
+    }
+ 
+ **Forklift-controle-code** [here](Forklift_Arduino.ino)
  
 ## Application de contrôle Android :
 
