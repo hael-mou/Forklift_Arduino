@@ -51,3 +51,60 @@ Pour ce projet, nous utilisons le drive motor l298n pour contrôler les dc gear 
     
     char msg[MSG_BUFFER_SIZE];
     int value = 0;
+
+ - Les variables suivantes permettent de définir les paramètres de connexion au réseau WiFi && les paramètres de connexion a mosquitto :
+ >
+
+    void setup_wifi() {
+      delay(10);
+      WiFi.mode(WIFI_STA);
+      WiFi.setAutoReconnect(true);
+      WiFi.begin(ssid, password);
+      
+      while (WiFi.status() != WL_CONNECTED) {
+        delay(500);
+      }
+    
+      randomSeed(micros());
+    }
+    
+    void callback(char* topic, byte* payload, unsigned int length) {
+      for (int i = 0; i < length; i++) {
+        Serial.print((char)payload[i]);
+      }
+      Serial.println();
+    }
+    
+    void reconnect() {
+      while (!client.connected()) {
+        String clientId = "ESP8266Client-";
+        clientId += String(random(0xffff), HEX);
+        // Attempt to connect
+        if (client.connect(clientId.c_str())) {
+          client.subscribe("lpsieForklift");
+        } else {
+          delay(5000);
+        }
+      }
+    }
+
+ - Les variables suivantes permettent de définir les paramètres de connexion au réseau WiFi && les paramètres de connexion a mosquitto :
+ >
+
+    void loop() {
+    
+      if (!client.connected()) {
+        reconnect();
+      }
+      client.loop();
+    
+      if (Serial.available() > 0) {
+        char inbyte = Serial.read();
+        if(inbyte != '\n' && inbyte != '\r'){
+          char msg[2];
+          msg[0]=inbyte;
+          msg[1]='\0';
+          client.publish("lpsieForklift", msg);
+        }
+      }  
+    }
