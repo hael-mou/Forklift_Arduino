@@ -16,3 +16,6 @@ Notre projet est un Chariot élévateur supportée par une grue avant, ce grue e
 <a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/DC%20Geared.png" target="_blank"><img src="Assets/DC%20Geared.png" alt="Browser Stack" width="140"></a>
 <a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/ULN2003-2.jpg" target="_blank"><img src="Assets/ULN2003-2.jpg" alt="Browser Stack" width="140"></a>
 <a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/stepper.jpg" target="_blank"><img src="Assets/stepper.jpg" alt="Browser Stack" width="140"></a>
+
+## Préparez le chariot élévateur
+La première chose est la fabrication de carrosserie :
