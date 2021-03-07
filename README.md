@@ -9,6 +9,7 @@ Notre projet est un Chariot élévateur supportée par une grue avant, ce grue e
            + [fabrication de carrosserie](#Préparez-le-chariot-élévateur)<br/>
            + [Programming esp8266](#Préparez-le-chariot-élévateur)<br/>
            + [Circuit de projet](#Préparez-le-chariot-élévateur)
++ [Application de contrôle ( Android )](#Préparez-le-chariot-élévateur)
 
 ## Matériel utilisé
 Pour ce projet, nous utilisons le drive motor l298n pour contrôler les dc gear motor,une carte arduino Uno et une carte Esp8266 pour connecter avec des autre objet . Les moteurs seront alimentés à l'aide de pile lithium 12v , la arduino sera alimentée à l'aide d’un batterie 5v . stepper motor et motor et son drive ULN2003 pour contrôle la grue . FTDI carte pour configure esp8266
