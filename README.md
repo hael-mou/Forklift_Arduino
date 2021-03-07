@@ -262,9 +262,6 @@ Pour ce projet, nous utilisons le drive motor l298n pour contrôler les dc gear 
 <a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/f5.jpeg" target="_blank"><img src="Assets/f5.jpeg" alt="Browser Stack" width="190"></a>
 
 
-<a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/merci%20pour%20votre%20attention.jpg" target="_blank"><img src="Assets/merci%20pour%20votre%20attention.jpg" alt="Browser Stack"></a>
-
-
     **Réalisé par :** 
      - Hamza El Moudden
      - Charki Mohamed
