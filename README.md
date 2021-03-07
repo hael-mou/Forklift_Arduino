@@ -11,6 +11,7 @@ Notre projet est un Chariot élévateur supportée par une grue avant, ce grue e
            + [Circuit de projet](#Préparez-le-chariot-élévateur)
 + [Arduino code](#Arduino-code-)
 + [Application de contrôle ( Android )](#application-de-contr%C3%B4le-android-)
++ [Photo de projet final](#Photo de projet final-)
 
 ## Matériel utilisé
 Pour ce projet, nous utilisons le drive motor l298n pour contrôler les dc gear motor,une carte arduino Uno et une carte Esp8266 pour connecter avec des autre objet . Les moteurs seront alimentés à l'aide de pile lithium 12v , la arduino sera alimentée à l'aide d’un batterie 5v . stepper motor et motor et son drive ULN2003 pour contrôle la grue . FTDI carte pour configure esp8266
@@ -252,3 +253,10 @@ Pour ce projet, nous utilisons le drive motor l298n pour contrôler les dc gear 
     e.printStackTrace();
     }
     }
+
+## Photo de projet final :
+
+<a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/P4.jpeg" target="_blank"><img src="Assets/P4.jpeg" alt="Browser Stack" width="190"></a>
+<a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/P4.jpeg" target="_blank"><img src="Assets/P4.jpeg" alt="Browser Stack" width="190"></a>
+<a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/P4.jpeg" target="_blank"><img src="Assets/P4.jpeg" alt="Browser Stack" width="190"></a>
+<a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/P4.jpeg" target="_blank"><img src="Assets/P4.jpeg" alt="Browser Stack" width="190"></a>
