@@ -7,3 +7,12 @@ Notre projet est un Chariot élévateur supportée par une grue avant, ce grue e
 + [Matériel utilisé](#Matériel-utilisé)
 
 ## Matériel utilisé
+<a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/esp8266.jpg" target="_blank"><img src="Assets/esp8266.jpg" alt="Browser Stack" width="140"></a>
+<a href=https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/100uf-50v-a-800x800.jpg" target="_blank"><img src="Assets/100uf-50v-a-800x800.jpg" alt="Browser Stack" width="140"></a>
+<a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/esp8266.jpg" target="_blank"><img src="Assets/esp8266.jpg" alt="Browser Stack" width="140"></a>
+<a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/esp8266.jpg" target="_blank"><img src="Assets/esp8266.jpg" alt="Browser Stack" width="140"></a>
+<a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/esp8266.jpg" target="_blank"><img src="Assets/esp8266.jpg" alt="Browser Stack" width="140"></a>
+<a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/esp8266.jpg" target="_blank"><img src="Assets/esp8266.jpg" alt="Browser Stack" width="140"></a>
+<a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/esp8266.jpg" target="_blank"><img src="Assets/esp8266.jpg" alt="Browser Stack" width="140"></a>
+<a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/esp8266.jpg" target="_blank"><img src="Assets/esp8266.jpg" alt="Browser Stack" width="140"></a>
+<a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/esp8266.jpg" target="_blank"><img src="Assets/esp8266.jpg" alt="Browser Stack" width="140"></a>
