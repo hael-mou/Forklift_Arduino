@@ -42,6 +42,7 @@ Pour ce projet, nous utilisons le drive motor l298n pour contrôler les dc gear 
  
     #include <ESP8266WiFi.h>
     #include <PubSubClient.h>
+    
  - Les variables suivantes permettent de définir les paramètres de connexion au réseau WiFi && les paramètres de connexion a mosquitto :
  >
 
@@ -58,7 +59,7 @@ Pour ce projet, nous utilisons le drive motor l298n pour contrôler les dc gear 
     char msg[MSG_BUFFER_SIZE];
     int value = 0;
 
- - Les variables suivantes permettent de définir les paramètres de connexion au réseau WiFi && les paramètres de connexion a mosquitto :
+ - methode de connexion et de reconnexion :
  >
 
     void setup_wifi() {
@@ -94,16 +95,21 @@ Pour ce projet, nous utilisons le drive motor l298n pour contrôler les dc gear 
       }
     }
 
- - Les variables suivantes permettent de définir les paramètres de connexion au réseau WiFi && les paramètres de connexion a mosquitto :
+ - setup & loop :
  >
 
-    void loop() {
+    void setup() {
+      Serial.begin(9600);
+      setup_wifi();
+      client.setServer(mqtt_server, 1883);
+      client.setCallback(callback);
+    }
     
+    void loop() {
       if (!client.connected()) {
         reconnect();
       }
       client.loop();
-    
       if (Serial.available() > 0) {
         char inbyte = Serial.read();
         if(inbyte != '\n' && inbyte != '\r'){
