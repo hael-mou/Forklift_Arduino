@@ -50,7 +50,7 @@ Pour ce projet, nous utilisons le drive motor l298n pour contrôler les dc gear 
  
  - Les variables suivantes permettent de définir les paramètres de connexion au réseau WiFi && les paramètres de connexion a mosquitto :
  >
-
+```c++
     #define MSG_BUFFER_SIZE  (50)
     
     const char* ssid = "LP";
@@ -63,10 +63,10 @@ Pour ce projet, nous utilisons le drive motor l298n pour contrôler les dc gear 
     
     char msg[MSG_BUFFER_SIZE];
     int value = 0;
-
+```
  - methode de connexion et de reconnexion :
  >
-
+```c++
     void setup_wifi() {
       delay(10);
       WiFi.mode(WIFI_STA);
@@ -99,10 +99,10 @@ Pour ce projet, nous utilisons le drive motor l298n pour contrôler les dc gear 
         }
       }
     }
-
+```
  - setup & loop :
  >
-
+```c++
     void setup() {
       Serial.begin(9600);
       setup_wifi();
@@ -125,7 +125,7 @@ Pour ce projet, nous utilisons le drive motor l298n pour contrôler les dc gear 
         }
       }  
     }
-    
+ ```   
    **Esp8266-code** [here](EspCode/EspCode.ino)
    
    3. Circuit de projet :
@@ -144,35 +144,35 @@ Pour ce projet, nous utilisons le drive motor l298n pour contrôler les dc gear 
 
  - les bibliothèques utilisées :
  >
-
+```c++
     #include <Stepper.h>
-
+```
  - la fonction utilisées pour controle les motors :
  >
-
+```c++
     void forkliftMotor(int Mode1,int Mode2,int Mode3,int Mode4){
         digitalWrite(pin1,Mode1);
         digitalWrite(pin2,Mode2);
         digitalWrite(pin3,Mode3);
         digitalWrite(pin4,Mode4);
     }
-  
+ ``` 
 > les pin : 8 - 9 - 10 - 11
 
  - la fonction utilisées pour controle la grue :
  >
-
+```c++
     void fokliftHand(Stepper stepPer ,  int SR){ 
       stepPer.step(SR);
       delay(1);
       stepPer.step(SR);
     }
-    
+ ```   
 > SR --> StepperOneRevolution : Tournez l'arbre d'un tour dans le sens des aiguilles d'une montre et d'un tour dans le sens inverse   
     
  - test de controle :
  >
-
+```c++
     if (Serial.available() > 0) {
         char incomingByte = Serial.read();
         switch(incomingByte){
@@ -194,7 +194,7 @@ Pour ce projet, nous utilisons le drive motor l298n pour contrôler les dc gear 
                break;
           }
     }
- 
+ ```
  **Forklift-controle-code** [here](Forklift_Arduino.ino)
  
 *[top↑](#Forklift_Arduino)* 
@@ -205,7 +205,7 @@ Pour ce projet, nous utilisons le drive motor l298n pour contrôler les dc gear 
  
  - les bibliothèques utilisées :
  >
-
+```java
     import org.eclipse.paho.android.service.MqttAndroidClient;
     import org.eclipse.paho.client.mqttv3.IMqttActionListener;
     import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
@@ -215,20 +215,20 @@ Pour ce projet, nous utilisons le drive motor l298n pour contrôler les dc gear 
     import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
     import org.eclipse.paho.client.mqttv3.MqttException;
     import org.eclipse.paho.client.mqttv3.MqttMessage;
-    
+ ```  
  - les variable utilisées :
  >
-
+```java
     String topicStr = "lpsieForklift";
     String clientId = MqttClient.generateClientId();
     MqttAndroidClient client = new MqttAndroidClient(this.getApplicationContext(), "tcp://test.mosquitto.org", clientId);
-    Button stop = findViewById(R.id.stop);
-    
+    Button stop = findViewById(R.id.stop); 
+```  
 > **D'autres boutons peuvent être ajoutés**
     
   - Connexion à mosquitto :
  >
-
+```java
     try {
     IMqttToken token = client.connect();
     token.setActionCallback(new IMqttActionListener() {
@@ -247,11 +247,11 @@ Pour ce projet, nous utilisons le drive motor l298n pour contrôler les dc gear 
     e.printStackTrace();
     }
     }
-
+```
   - envoie un message à mosquitto :
  >
-
-    **//click methode**
+```java
+    //click methode
     public void stop(View view) {
     String topic = topicStr;
     String message = "k";
@@ -261,7 +261,7 @@ Pour ce projet, nous utilisons le drive motor l298n pour contrôler les dc gear 
     e.printStackTrace();
     }
     }
-
+```
 *[top↑](#Forklift_Arduino)*
 
 ## Photo de projet final :
