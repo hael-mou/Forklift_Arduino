@@ -9,6 +9,7 @@ Notre projet est un Chariot élévateur supportée par une grue avant, ce grue e
            + [fabrication de carrosserie](#Préparez-le-chariot-élévateur)<br/>
            + [Programming esp8266](#Préparez-le-chariot-élévateur)<br/>
            + [Circuit de projet](#Préparez-le-chariot-élévateur)
++ [Arduino code](#Arduino-code-)
 + [Application de contrôle ( Android )](#application-de-contr%C3%B4le-android-)
 
 ## Matériel utilisé
@@ -126,6 +127,35 @@ Pour ce projet, nous utilisons le drive motor l298n pour contrôler les dc gear 
 | Esp8266 | 3,5v - TX - RX - GND  |
  </a>
  
+## Arduino code :
+
+ - les bibliothèques utilisées :
+ >
+
+    #include <Stepper.h>
+
+ - la fonction utilisées pour controle les motors :
+ >
+
+    void forkliftMotor(int Mode1,int Mode2,int Mode3,int Mode4){
+        digitalWrite(pin1,Mode1);
+        digitalWrite(pin2,Mode2);
+        digitalWrite(pin3,Mode3);
+        digitalWrite(pin4,Mode4);
+    }
+
+ - la fonction utilisées pour controle la grue :
+ >
+
+    void fokliftHand(Stepper stepPer ,  int SR){ 
+      stepPer.step(SR);
+      delay(1);
+      stepPer.step(SR);
+    }
+
+
+
+ 
 ## Application de contrôle Android :
 
 <a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/app.PNG" target="_blank"><img src="Assets/app.PNG" alt="Browser Stack"></a><br/> 
@@ -178,6 +208,7 @@ Pour ce projet, nous utilisons le drive motor l298n pour contrôler les dc gear 
   - envoie un message à mosquitto :
  >
 
+    **//click methode**
     public void stop(View view) {
     String topic = topicStr;
     String message = "k";
