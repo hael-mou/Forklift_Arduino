@@ -125,6 +125,7 @@ Pour ce projet, nous utilisons le drive motor l298n pour contrôler les dc gear 
 | drive Stepper | 4 - 5 - 6 - 7 - 5v - GND  |
 | Esp8266 | 3,5v - TX - RX - GND  |
  </a>
+ 
 ## Application de contrôle Android :
 
 <a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/app.PNG" target="_blank"><img src="Assets/app.PNG" alt="Browser Stack"></a><br/> 
