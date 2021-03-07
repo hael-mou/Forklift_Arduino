@@ -142,3 +142,48 @@ Pour ce projet, nous utilisons le drive motor l298n pour contrôler les dc gear 
     import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
     import org.eclipse.paho.client.mqttv3.MqttException;
     import org.eclipse.paho.client.mqttv3.MqttMessage;
+    
+ - les variable utilisées :
+ >
+
+    String topicStr = "lpsieForklift";
+    String clientId = MqttClient.generateClientId();
+    MqttAndroidClient client = new MqttAndroidClient(this.getApplicationContext(), "tcp://test.mosquitto.org", clientId);
+    Button stop = findViewById(R.id.stop);
+    
+> **D'autres boutons peuvent être ajoutés**
+    
+  - Connexion à mosquitto :
+ >
+
+    try {
+    IMqttToken token = client.connect();
+    token.setActionCallback(new IMqttActionListener() {
+    @Override
+    public void onSuccess(IMqttToken asyncActionToken) {
+    // We are connected
+    Toast.makeText(MainActivity.this, "connect", Toast.LENGTH_LONG).show();
+    }
+    @Override
+    public void onFailure(IMqttToken asyncActionToken, Throwable exception) {
+    // Something went wrong e.g. connection timeout or firewall problems
+    Toast.makeText(MainActivity.this, "Not connect", Toast.LENGTH_LONG).show();
+    }
+    });
+    } catch (MqttException e) {
+    e.printStackTrace();
+    }
+    }
+
+  - envoie un message à mosquitto :
+ >
+
+    public void stop(View view) {
+    String topic = topicStr;
+    String message = "k";
+    try {
+    client.publish(topic, message.getBytes(), 0, false);
+    } catch (MqttException e) {
+    e.printStackTrace();
+    }
+    }
