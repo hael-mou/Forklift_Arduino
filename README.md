@@ -21,9 +21,9 @@ Pour ce projet, nous utilisons le drive motor l298n pour contrôler les dc gear 
 <a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/stepper.jpg" target="_blank"><img src="Assets/stepper.jpg" alt="Browser Stack" width="140"></a>
 
 ## Préparez le chariot élévateur
-La première chose est la fabrication de carrosserie :
+1. La première chose est la fabrication de carrosserie :
 
 <a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/P1.jpeg" target="_blank"><img src="Assets/P1.jpeg" alt="Browser Stack" width="220"></a>
 <a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/P2.jpeg" target="_blank"><img src="Assets/P2.jpeg" alt="Browser Stack" width="220"></a>
 <a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/P3.jpeg" target="_blank"><img src="Assets/P3.jpeg" alt="Browser Stack" width="220"></a>
-<a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/P4.jpeg" target="_blank"><img src="Assets/P4.jpeg" alt="Browser Stack" width="220"></a>
+<a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/P4.jpeg" target="_blank"><img src="Assets/P4.jpeg" alt="Browser Stack" width="220"></a><br/>  2. La première chose est la fabrication de carrosserie :
