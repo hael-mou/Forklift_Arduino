@@ -8,3 +8,11 @@ Notre projet est un Chariot élévateur supportée par une grue avant, ce grue e
 
 ## Matériel utilisé
 <a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/esp8266.jpg" target="_blank"><img src="Assets/esp8266.jpg" alt="Browser Stack" width="140"></a>
+<a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/arduino-uno.jpg" target="_blank"><img src="Assets/arduino-uno.jpg" alt="Browser Stack" width="140"></a>
+<a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/l298n.jpg" target="_blank"><img src="Assets/l298n.jpg" alt="Browser Stack" width="140"></a>
+<a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/100uf-50v-a-800x800.jpg" target="_blank"><img src="Assets/100uf-50v-a-800x800.jpg" alt="Browser Stack" width="140"></a>
+<a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/12vBattrery.jpg" target="_blank"><img src="Assets/12vBattrery.jpg" alt="Browser Stack" width="140"></a>
+<a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/9V-battery.jpg" target="_blank"><img src="Assets/9V-battery.jpg" alt="Browser Stack" width="140"></a>
+<a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/DC%20Geared.png" target="_blank"><img src="Assets/DC%20Geared.png" alt="Browser Stack" width="140"></a>
+<a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/ULN2003-2.jpg" target="_blank"><img src="Assets/ULN2003-2.jpg" alt="Browser Stack" width="140"></a>
+<a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/stepper.jpg" target="_blank"><img src="Assets/stepper.jpg" alt="Browser Stack" width="140"></a>
