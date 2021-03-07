@@ -110,3 +110,12 @@ Pour ce projet, nous utilisons le drive motor l298n pour contrôler les dc gear 
     }
     
    **Esp8266-code** [here](EspCode/EspCode.ino)
+   
+   3. Circuit de projet :
+   
+   <a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/project.PNG" target="_blank"><img src="/Assets/project.PNG" alt="Browser Stack">   
+ | | Arduino pin |
+|--|--|
+| drive l298n | 8 - 9 - 10 - 11 - GND  |
+| drive Stepper | 4 - 5 - 6 - 7 - 5v - GND  |
+| Esp8266 | 3,5v - TX - RX - GND  |
