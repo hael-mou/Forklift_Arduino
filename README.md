@@ -127,4 +127,17 @@ Pour ce projet, nous utilisons le drive motor l298n pour contrôler les dc gear 
  
 ## Application de contrôle Android :
 
-<a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/app.PNG" target="_blank"><img src="Assets/app.PNG" alt="Browser Stack">
+<a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/app.PNG" target="_blank"><img src="Assets/app.PNG" alt="Browser Stack"><br/> 
+ 
+ - les bibliothèques utilisées :
+ >
+
+    import org.eclipse.paho.android.service.MqttAndroidClient;
+    import org.eclipse.paho.client.mqttv3.IMqttActionListener;
+    import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
+    import org.eclipse.paho.client.mqttv3.IMqttToken;
+    import org.eclipse.paho.client.mqttv3.MqttCallback;
+    import org.eclipse.paho.client.mqttv3.MqttClient;
+    import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
+    import org.eclipse.paho.client.mqttv3.MqttException;
+    import org.eclipse.paho.client.mqttv3.MqttMessage;
