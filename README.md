@@ -256,7 +256,7 @@ Pour ce projet, nous utilisons le drive motor l298n pour contrôler les dc gear 
 
 ## Photo de projet final :
 
-<a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/P4.jpeg" target="_blank"><img src="Assets/P4.jpeg" alt="Browser Stack" width="190"></a>
-<a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/P4.jpeg" target="_blank"><img src="Assets/P4.jpeg" alt="Browser Stack" width="190"></a>
-<a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/P4.jpeg" target="_blank"><img src="Assets/P4.jpeg" alt="Browser Stack" width="190"></a>
-<a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/P4.jpeg" target="_blank"><img src="Assets/P4.jpeg" alt="Browser Stack" width="190"></a>
+<a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/f2.jpeg" target="_blank"><img src="Assets/f2.jpeg" alt="Browser Stack" width="190"></a>
+<a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/f3.jpeg" target="_blank"><img src="Assets/f3.jpeg" alt="Browser Stack" width="190"></a>
+<a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/f4.jpeg" target="_blank"><img src="Assets/f4.jpeg" alt="Browser Stack" width="190"></a>
+<a href="https://github.com/hamzaelmoudden/Forklift_Arduino/blob/master/Assets/f5.jpeg" target="_blank"><img src="Assets/f5.jpeg" alt="Browser Stack" width="190"></a>
