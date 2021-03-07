@@ -1,6 +1,8 @@
 #include <ESP8266WiFi.h>
 #include <PubSubClient.h>
 
+#define MSG_BUFFER_SIZE  (50)
+
 const char* ssid = "1";
 const char* password = "00000000";
 const char* mqtt_server = "test.mosquitto.org";
@@ -8,7 +10,7 @@ const char* mqtt_server = "test.mosquitto.org";
 WiFiClient espClient;
 PubSubClient client(espClient);
 unsigned long lastMsg = 0;
-#define MSG_BUFFER_SIZE  (50)
+
 char msg[MSG_BUFFER_SIZE];
 int value = 0;
 
@@ -38,7 +40,7 @@ void reconnect() {
     clientId += String(random(0xffff), HEX);
     // Attempt to connect
     if (client.connect(clientId.c_str())) {
-      client.subscribe("lpsieCar");
+      client.subscribe("lpsieForklift");
     } else {
       delay(5000);
     }
