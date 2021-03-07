@@ -43,9 +43,11 @@ Pour ce projet, nous utilisons le drive motor l298n pour contrôler les dc gear 
  - include les 3 librairies suivantes :
  >
  
+ ```c++
     #include <ESP8266WiFi.h>
     #include <PubSubClient.h>
-    
+ ```
+ 
  - Les variables suivantes permettent de définir les paramètres de connexion au réseau WiFi && les paramètres de connexion a mosquitto :
  >
 
